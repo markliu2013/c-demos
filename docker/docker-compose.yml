@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  gcc:
+    build: .
+    container_name: gcc
+    command: tail -f /dev/null
+    network_mode: "host"
+    volumes:
+      - ../src:/root/src
